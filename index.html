@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="KDrama Hub - Discover popular Korean dramas, episode guides, reviews, cast information, and Hindi dubbed K-dramas.">
+
+    <meta name="keywords" content="
+kdrama,
+k drama,
+korean drama,
+kdrama hub,
+kdrama in hindi,
+kdrama hindi dubbed,
+best kdrama in hindi dubbed,
+new kdrama,
+popular kdrama,
+romantic kdrama,
+action kdrama,
+thriller kdrama,
+korean series,
+asian dramas,
+watch kdrama,
+kdrama episodes,
+kdrama reviews,
+top korean dramas,
+free kdrama guide
+">
+
+    <meta name="author" content="KDrama Hub">
+
+    <meta property="og:title" content="KDrama Hub">
+    <meta property="og:description"
+        content="Explore Korean dramas, Hindi dubbed K-dramas, episode guides, ratings, and reviews.">
+    <meta property="og:type" content="website">
+
+    <meta name="robots" content="index, follow">
+
+
+
+
+
+
+
+
+    <title>KDramaHub-KDrama Hindi Dubbed</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>🎬 KDramaHub</h1>
+        <p>Discover Your Next Favorite K-Drama</p>
+    </header>
+
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search K-Dramas...">
+    </div>
+
+    <div class="container" id="dramaContainer">
+
+        <div class="drama-container">
+
+            <div class="card">
+                <img src="qot.png" alt="Queen of Tears">
+                <div class="card-content">
+                    <h3>Queen of Tears (hindi dubbed)</h3>
+                    <p class="genre">Romance • Comedy</p>
+                    <p>A romantic drama about love and family.The queen of department stores and the prince of
+                        supermarkets weathers a marital crisis, until love miraculously begins to bloom again.</p>
+                    <a class="watch-btn" href="episodes.html?drama=queen-of-tears">Episodes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://6.soompi.io/wp-content/uploads/image/a802c5f9e4c84e49ae9fce9b43a26c70.jpeg?s=900x600&e=t"
+                    alt="Crash Landing On You">
+                <div class="card-content">
+                    <h3>Crash Landing On You (hindi dubbed)</h3>
+                    <p class="genre">Romance • Comedy • Political</p>
+                    <p>A South Korean heiress lands in North Korea.A paragliding mishap drops a South Korean heiress in
+                        North Korea - and into the life of an army officer, who decides he will help her hide</p>
+                    <a class="watch-btn" href="episodes.html?drama=crash-landing-on-you">Episodes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://resizing.flixster.com/Om-6TBEld2c_I1k9Jd2GDYu9ASg=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p19515278_b_h9_aa.jpg"
+                    alt="Vincenzo">
+                <div class="card-content">
+                    <h3>Vincenzo (hindi dubbed)</h3>
+                    <p class="genre">Action • Crime</p>
+                    <p>An Italian lawyer returns to Korea for justice.During a visit to his motherland, a Korean-Italian
+                        mafia lawyer gives a conglomerate a taste of its own medicine with a side of justice</p>
+                    <a class="watch-btn" href="episodes.html?drama=vincenzo">Episodes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24854922/ktl.jpg?quality=90&strip=all&crop=0,12.569444444444,100,50"
+                    alt="King The Land">
+                <div class="card-content">
+                    <h3>King The Land (hindi dubbed)</h3>
+                    <p class="genre">Romance • Comedy</p>
+                    <p>Amid a tense inheritance fight, a charming heir clashes with his hardworking employee who's known
+                        for her irresistible smile, which he cannot stand.</p>
+                    <a class="watch-btn" href="episodes.html?drama=king-the-land">Episodes</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <img src="https://media.themoviedb.org/t/p/w780/3E1GroTJCRdIYHa5n62GqjmqxQR.jpg" alt="True Beauty">
+                <div class="card-content">
+                    <h3>True Beauty (hindi dubbed)</h3>
+                    <p class="genre">Romance • Comedy • Highschool</p>
+                    <p>Insecure about her appearance, a student uses make-up to conceal her blemishes. However, she soon
+                        befriends a boy who sees her for her true self.</p>
+                    <a class="watch-btn" href="episodes.html?drama=true-beauty">Episodes</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://0.soompi.io/wp-content/uploads/2026/03/01041308/sirens-kiss-1-2.jpg"
+                    alt="Siren's Kiss">
+                <div class="card-content">
+                    <h3>Siren's Kiss (hindi dubbed)</h3>
+                    <p class="genre">Romance • melodrama • Mystery • Crime</p>
+                    <p>Cha Wooseok investigates an insurance fraud scheme linked to a series of mysterious deaths; he
+                        soon becomes entangled with Han Seol-ah, who is suspected to be at the center of it all.</p>
+                    <a class="watch-btn" href="episodes.html?drama=siren's-Kiss">Episodes</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 KDramaHub
+    </footer>
+
+    <script>
+        const search = document.getElementById("search");
+
+        search.addEventListener("keyup", () => {
+            const term = search.value.toLowerCase();
+            const cards = document.querySelectorAll(".card");
+
+            cards.forEach(card => {
+                const title = card.querySelector("h3").textContent.toLowerCase();
+
+                if (title.includes(term)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
